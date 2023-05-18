@@ -60,13 +60,13 @@ h3 {
 }
 
 .middle-container {
-    margin: 100px 0;
+    margin: 200px 0;
 }
 .profile-img {
   display: block;
   width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  height: 300px;
+  border-radius: 15%;
   object-fit: cover; /* optional, to ensure the image fills the entire circle */
 }
 hr {
