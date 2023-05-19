@@ -44,6 +44,15 @@ h3 {
   padding-bottom: 10px;
   text-align: center;
 }
+h4 {
+  display: block;
+  color: #11000e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-align: center;
+}
 .mountimg  {
   display: block;
   margin: 0 auto;
@@ -130,8 +139,16 @@ background-image: linear-gradient(to bottom, #11cdd4, #11999e);
   display: flex;
   justify-content: center;
   margin-top: 10px;
+   flex-direction: column;
 }
 .coding-gif {
   width: 300px;
   height: 300px;
+}
+.edu{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
