@@ -1,7 +1,9 @@
+html{
+  font-size: 18px
+}
 body{
   margin: 0;
 }
-
 
 .top-container {
   background-color: #e4f9f5;
@@ -19,7 +21,7 @@ body{
 h1 {
   display: block;
   color: #66bfbf;
-  font-size: 5.625rem;
+  font-size: 5rem;
   font-family: "Sacramento", cursive;
   text-align: center; /* add this property to center the text */
   margin: 0 auto; /* add this property to center the block element horizontally */
