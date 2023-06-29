@@ -120,21 +120,6 @@ hr {
   text-align: center;
 }
 
-.btn {
-  display: inline-block;
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  color: white;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-    font-family: var(--font-family);
-}
-
-.btn:hover {
-  background-image: linear-gradient(to bottom, #0d9ca4, #0d7d82);
-}
 
 .bottom-container {
   display: block;
@@ -231,21 +216,72 @@ hr {
   margin-bottom: 20px;
 }
 
-.plan-button {
-  background-color: var(--pricing-primary-color);
-    font-family: var(--font-family);
+.btn {
+display: inline-block;
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  font-family: var(--font-family);
   color: #fff;
-  padding: 10px 20px;
+    padding: 6px 12px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+    font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 
-.plan-button:hover {
-  background-color: #0d7d82;
+
+
+.btn:hover {
+  background-image: linear-gradient(to bottom, #0d9ca4, #0d7d82);
 }
+.btn:hover {
+  background-color: #0d7d82;
+  transform: scale(1.05) ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 
 /* Responsive Styles */
